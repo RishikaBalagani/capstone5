@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffe6f0; /* soft baby pink */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #4b1c33;
+}
+
+/* Heading */
+h1 {
+    color: #b03060;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px #ffc0cb;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 i {
+    color: #ff69b4;
+}
+
+/* Buttons */
+button {
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 8px rgba(255, 105, 180, 0.3);
+}
+
+button:hover {
+    background-color: #ff4f91;
+    transform: translateY(-2px);
+}
+
+button.delete {
+    background-color: #e75480;
+}
+
+button.delete:hover {
+    background-color: #c71585;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    max-width: 450px;
+    margin: auto;
+    background: #fff0f5;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 14px rgba(220, 20, 60, 0.15);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #ffe6eb;
+    color: #4b1c33;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #a05274;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Book List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fcd5e8;
+    margin: 12px auto;
+    padding: 18px;
+    max-width: 520px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(255, 192, 203, 0.25);
+    border: 1px solid #f7b0c9;
+    text-align: left;
+    position: relative;
+}
+
+li::before {
+    content: "💖 ";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c71585;
+}
